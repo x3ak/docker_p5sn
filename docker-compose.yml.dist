@@ -1,0 +1,23 @@
+web:
+  container_name: p5sn
+  build: .
+  ports:
+    - "127.0.0.3:80:80"
+  links:
+    - db
+  volumes:
+    - /path/to/project/:/app
+  environment:
+    - PHP_IDE_CONFIG="serverName=p5sn.local"
+    - XDEBUG_CONFIG="idekey=PHPSTORM"
+    - P5SN_OFFLINE="1" #Set to 0 if you use application from intranet.
+db:
+  container_name: p5sn_db
+  ports:
+    - "127.0.0.3:5506:3306"
+  volumes:
+    - ./mysql/:/database/import_db
+  image: mysql/mysql-server:5.5
+  environment:
+    MYSQL_DATABASE: p5sn_dev
+    MYSQL_ROOT_PASSWORD: toor
