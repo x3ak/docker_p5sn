@@ -24,10 +24,10 @@
 
 
 #### Entering p5sn container:
-1. Execute from terminal from terminal: `cd /path/to/your/cloned/docker_p5sn`
-2. Execute from terminal from terminal: `chmod +x enter-container.sh`
-3. Execute from terminal from terminal: `./enter-container.sh`, now you are in p5sn container
-4. Execute from terminal from terminal: `cd app`, now you are in the symfony project, from here you clean cache, make composer install, but not commit 
+1. Execute from terminal: `cd /path/to/your/cloned/docker_p5sn`
+2. Execute from terminal: `chmod +x enter-container.sh`
+3. Execute from terminal: `./enter-container.sh`, now you are in p5sn container
+4. Execute from terminal: `cd app`, now you are in the symfony project, from here you clean cache, make composer install, but not commit 
     with git, to commit with git you need to make this from outside of container due to docker root file permission that 
     will change permissions
 5. Give permissions to `cache/, logs` maps
