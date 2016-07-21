@@ -12,6 +12,8 @@
 2. Copy file `docker-compose.yml.dist` in `docker-compose.yml`
 3. Edit in key 'volumes' and put your `/path/to/project/`
 4. Execute from terminal: `docker-compose up`
+
+
 #### Importing database:
 1. Copy db dump to: `/path/to/your/cloned/docker_p5sn/mysql`
 2. Rename dump to: `p5sndb.sql`
@@ -19,6 +21,8 @@
 4. Now you are in container p5sn_db, execute from terminal: `cd /database/import_db`
 5. Execute from terminal: `chmod +x import_db.sh`
 6. Import db by executing from terminal: `./import_db.sh`
+
+
 #### Entering p5sn container:
 1. Execute from terminal from terminal: `cd /path/to/your/cloned/docker_p5sn`
 2. Execute from terminal from terminal: `chmod +x enter-container.sh`
