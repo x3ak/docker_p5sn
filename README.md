@@ -40,3 +40,13 @@
 5. Give [permissions](http://symfony.com/doc/2.3/book/installation.html) to `cache/, logs` maps
 6. Run: `composer install`
 7. Have fun!
+
+
+### Configuring xdebug in PhpStorm
+
+#### *!NOTE: This configuration is for those where don't work `PHP_IDE_CONFIG` environment.*
+
+1.
+![step 1](readme_images/first_step.png)
+2.
+![step 2](readme_images/second_step.png)
