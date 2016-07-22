@@ -10,7 +10,9 @@ web:
   environment:
     - PHP_IDE_CONFIG="serverName=p5sn.local"
     - XDEBUG_CONFIG="idekey=PHPSTORM"
-    - P5SN_OFFLINE="1" #Set to 0 if you use application from intranet.
+    - P5SN_OFFLINE="1"
+            #Set to 0 if you use application from intranet.
+            #In /path/to/project/web/.htaccess "SetEnv P5SN_OFFLINE 1" change to "SetEnv P5SN_OFFLINE 0"
 db:
   container_name: p5sn_db
   ports:
