@@ -1,4 +1,4 @@
-FROM webdevops/php-apache:debian-8
+FROM webdevops/php-apache-dev:debian-8
 
 MAINTAINER Marius Tamazlicaru "tamazlicaru@yahoo.com"
 
