@@ -39,7 +39,9 @@
     permission that will change permissions
 5. Give [permissions](http://symfony.com/doc/2.3/book/installation.html) to `cache/, logs` maps
 6. Run: `composer install`
-7. Have fun!
+7. Execute from terminal on your local machine: `sudo nano /etc/hosts`
+8. Add there and save: `127.0.0.3    p5sn.local`
+8. Have fun!
 
 
 ### Configuring xdebug in PhpStorm
