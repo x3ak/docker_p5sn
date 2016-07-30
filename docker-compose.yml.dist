@@ -8,9 +8,9 @@ web:
     volumes:
         - /path/to/project/:/app
     environment:
-        - PHP_IDE_CONFIG = serverName=p5sn.local
-        - XDEBUG_CONFIG = idekey=docker
-        - P5SN_OFFLINE = 1
+        - PHP_IDE_CONFIG=serverName=p5sn.local
+        - XDEBUG_CONFIG=idekey=docker
+        - P5SN_OFFLINE=1
             #Set to 0 if you use application from intranet.
             #In /path/to/project/web/.htaccess "SetEnv P5SN_OFFLINE 1" change to "SetEnv P5SN_OFFLINE 0"
 db:

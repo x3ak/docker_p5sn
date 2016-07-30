@@ -37,7 +37,7 @@
 4. Execute from terminal: `cd app`, now you are in the symfony project, from here you clean cache, make composer install, 
     but not commit with git, to commit with git you need to make this from outside of container due to docker root file 
     permission that will change permissions
-5. Give [permissions](http://symfony.com/doc/2.3/book/installation.html) to `cache/, logs` maps
+5. Give permissions to `cache/, logs` maps, executing from terminal: `./../tmp/set-permissions.sh`
 6. Run: `composer install`
 7. Execute from terminal on your local machine: `sudo nano /etc/hosts`
 8. Add there and save: `127.0.0.3    p5sn.local`
