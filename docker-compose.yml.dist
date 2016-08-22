@@ -13,6 +13,10 @@ web:
         - P5SN_OFFLINE=1
             #Set to 0 if you use application from intranet.
             #In /path/to/project/web/.htaccess "SetEnv P5SN_OFFLINE 1" change to "SetEnv P5SN_OFFLINE 0"
+    extra_hosts:
+    - p5sn.local:127.0.0.3
+    - www.p5sn.local:127.0.0.3
+
 db:
     container_name: p5sn_db
     ports:
