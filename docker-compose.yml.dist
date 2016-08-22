@@ -10,12 +10,10 @@ web:
     environment:
         - PHP_IDE_CONFIG=serverName=p5sn.local
         - XDEBUG_CONFIG=idekey=docker
-        - P5SN_OFFLINE=1
-            #Set to 0 if you use application from intranet.
-            #In /path/to/project/web/.htaccess "SetEnv P5SN_OFFLINE 1" change to "SetEnv P5SN_OFFLINE 0"
     extra_hosts:
-    - p5sn.local:127.0.0.3
-    - www.p5sn.local:127.0.0.3
+        - p5sn.local:127.0.0.3
+        - www.p5sn.local:127.0.0.3
+    restart: always
 
 db:
     container_name: p5sn_db
@@ -27,3 +25,4 @@ db:
     environment:
         MYSQL_DATABASE: p5sn_dev
         MYSQL_ROOT_PASSWORD: toor
+    restart: always
